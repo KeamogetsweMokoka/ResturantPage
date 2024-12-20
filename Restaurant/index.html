@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaQuery.css">
 </head>
 <body>
     <nav id="header-nav">
@@ -22,23 +23,6 @@
             <button class="image-reservation-button">Reservations</button>
         </div>
     </nav> 
-    <!-- This for the hamburgur nav bar. -->
-    <!-- <nav id="hamburger-nav">
-        <div class="logo">Restaurant Name</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#story" onclick="toggleMenu()">Our Story</a></li>
-                <li><a href="#menue" onclick="toggleMenu()">Menu</a></li>
-                <li><a href="#events" onclick="toggleMenu()">Private Events</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav> -->
     <!-- Section : Home -->
     <section id="home">
         <div class="home-container">
@@ -54,7 +38,7 @@
     </section>
 
     <section id="spacer-line">
-        ___________________________________________________________________________________________________________________________________________
+        
     </section>
 
 <!-- Our Story Section -->
@@ -78,7 +62,7 @@
     </section>
 
     <section id="spacer-line">
-        ___________________________________________________________________________________________________________________________________________
+        
     </section>
 
     <!-- Menu Section -->
@@ -86,30 +70,30 @@
         <h1>The Menu</h1>
         <div class="grid-container-menu">
             <div class="gride-image">
-                <h2><a href="breakfast.html">Breakfast</a></h2>
+                <h2 class="menue-link-text"><a href="breakfast.html">Breakfast</a></h2>
                 <img src="../Restaurant/assets/breakfast-menu-image.webp" alt="breakfast menu image">
             </div>
             <div class="gride-image">
-                <h2><a href="">Lunch</a></h2>
+                <h2 class="menue-link-text"><a href="">Lunch</a></h2>
                 <img src="../Restaurant/assets/lunch-menu-image.webp" alt="lunch menu image">
             </div>
             <div class="gride-image">
-                <h2><a href="">Dinner</a></h2>
+                <h2 class="menue-link-text"><a href="">Dinner</a></h2>
                 <img src="../Restaurant/assets/dinner-menu-image.jpg" alt="breakfast menu image">
             </div>
             <div class="gride-image">
-                <h2><a href="">Cocktails</a></h2>
+                <h2 class="menue-link-text"><a href="">Cocktails</a></h2>
                 <img src="../Restaurant/assets/cocktail-menu-image.webp" alt="breakfast menu image">
             </div>
             <div class="gride-image">
-                <h2><a href="">Desserts</a></h2>
+                <h2 class="menue-link-text"><a href="">Desserts</a></h2>
                 <img src="../Restaurant/assets/dessert-menu-image-3.webp" alt="breakfast menu image">
             </div>
         </div>
      </section>
 
      <section id="spacer-line">
-        ___________________________________________________________________________________________________________________________________________
+        
     </section>
 
     <!-- Private Event Section -->
@@ -140,7 +124,7 @@
     </section>
 
     <section id="spacer-line">
-        ___________________________________________________________________________________________________________________________________________
+        
     </section>
 
     <section id="contact">
@@ -163,6 +147,10 @@
             </div>
         </div>
     </section>
+
+    <footer id="footer">
+        <p>&copy; 2024 Restaurant Name. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>

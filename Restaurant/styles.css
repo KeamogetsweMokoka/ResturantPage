@@ -3,6 +3,7 @@ body{
     /* margin-left: 1rem;
     margin-right: 1rem; */
     font-family: 'Courier New', Courier, monospace;
+    padding-top: 70px;
 }
 
 /* Sections */
@@ -24,11 +25,19 @@ body{
 }
 
 #header-nav {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    z-index: 10000;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     justify-content: space-around;
     align-items: center;
     height: 17vh;
-    height: 17vh;
 }
+
+
 
 .nav-links{
     gap: 2rem;
@@ -45,6 +54,7 @@ section{
 
 /* Image */ 
 .home-container{
+    top: 90px;
     position: relative;
     width: 1340px;
     height: 500px;
@@ -143,6 +153,10 @@ button{
     font-size: 1.2rem;
     font-weight: bold;
 }
+.menue-link-text a{
+    text-decoration: underline; 
+    color: black; 
+}
 
 
 /* Private Event seection */
@@ -173,10 +187,29 @@ button{
     justify-content: center;
     text-align: center;
 }
-.gride-container-contact img{
+.gride-container-contact img {
     width: 50px;
     height: 50px;
+    transition: all 0.3s ease; /* Hover animation */
 }
+.gride-container-contact img:hover {
+    transform: scale(1.1); /* Slightly enlarges on hover */
+}
+
+
+/* Footer */ 
+#footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    text-align: center; /* Center-align the text */
+    padding: 10px 0; /* Padding for space around the text */
+    font-size: 0.9rem; /* Slightly smaller font size */
+}
+
+#footer p {
+    margin: 0; /* Remove default margin */
+}
+
 
 /* Links */ 
 a {
@@ -191,4 +224,21 @@ a:active{
 }
 a:visited{
     color: black;
+}
+
+/* buttons */ 
+button {
+    background-color: #DAA520; /* Gold background */
+    color: white; /* White text for contrast */
+    border: none; /* Removes default border */
+    padding: 10px 20px; /* Adds padding for a comfortable size */
+    font-size: 1rem; /* Sets font size */
+    font-weight: bold; /* Makes text bold */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+button:hover {
+    background-color: #C6931B; /* Darker gold on hover */
+    transform: scale(1.05); /* Slightly enlarges the button */
 }
