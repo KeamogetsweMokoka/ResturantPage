@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaQuery.css">
+    <link rel="stylesheet" href="mediaQuery2.css">
+</head>
+<body>
+    <!-- Nav bar -->
+    <nav id="header-nav">
+        <div class="logo">Restaurant Name</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#events">Private Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <button class="image-reservation-button">Reservations</button>
+        </div>
+
+        <nav id="hamburger-nav">
+            <div class="logo">Restaurant Name</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="#story" onclick="toggleMenu()">Our Story</a></li>
+                    <li><a href="#menu" onclick="toggleMenu()">Menu</a></li>
+                    <li><a href="#events" onclick="toggleMenu()">Private Events</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+
+    </nav> 
+
+    <!-- Section : Home -->
+    <section id="home">
+        <div class="home-container">
+            <img src="../Restaurant/assets/background-image.jpg " class="background-image" alt=""> <!-- adding background image. -->
+            <div class="background-image-text">
+                <div class="image-logo">Restaurant Name</div>
+                <p>Monday ~ Thursday | 08:00 to 20:00</p>
+                <p>Friday ~ Sunday | 08:00 to 22:00</p>
+                <button class="image-reservation-button">Reservations</button>
+                <h2>South Africa's Modern Interpretation of Traditional Cuisine </h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="spacer-line">
+        
+    </section>
+
+<!-- Our Story Section -->
+    <section id="story">
+        <h1>Our Story.</h1>
+        <div class="grid-container-story">
+            <div class="grid-text">
+                <h2>Restaurant Name</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur a bibendum purus. Duis convallis velit nec nisi efficitur, 
+                    nec commodo nunc cursus.</p>
+            </div>
+            <div class="grid-image">
+                <img src="../Restaurant/assets/steak-image.jpeg" alt="image of a steak">
+            </div>
+        </div>
+        <div class="images-after-gride">
+            <img src="../Restaurant/assets/pasta-image.avif" alt="image of pasta" class="images-after-gride-1">
+            <img src="../Restaurant/assets/sushi-image.jpeg" alt="image of sushi" class="images-after-gride-2">
+        </div>
+    </section>
+
+    <section id="spacer-line">
+        
+    </section>
+
+    <!-- Menu Section -->
+     <section id="menu">
+        <h1>The Menu</h1>
+        <div class="grid-container-menu">
+            <div class="gride-image">
+                <h2 class="menue-link-text"><a href="breakfast.html">Breakfast</a></h2>
+                <img src="../Restaurant/assets/breakfast-menu-image.webp" alt="breakfast menu image">
+            </div>
+            <div class="gride-image">
+                <h2 class="menue-link-text"><a href="">Lunch</a></h2>
+                <img src="../Restaurant/assets/lunch-menu-image.webp" alt="lunch menu image">
+            </div>
+            <div class="gride-image">
+                <h2 class="menue-link-text"><a href="">Dinner</a></h2>
+                <img src="../Restaurant/assets/dinner-menu-image.jpg" alt="breakfast menu image">
+            </div>
+            <div class="gride-image">
+                <h2 class="menue-link-text"><a href="">Cocktails</a></h2>
+                <img src="../Restaurant/assets/cocktail-menu-image.webp" alt="breakfast menu image">
+            </div>
+            <div class="gride-image">
+                <h2 class="menue-link-text"><a href="">Desserts</a></h2>
+                <img src="../Restaurant/assets/dessert-menu-image-3.webp" alt="breakfast menu image">
+            </div>
+        </div>
+     </section>
+
+     <section id="spacer-line">
+        
+    </section>
+
+    <!-- Private Event Section -->
+    <section id="events">
+        <h1>Private Events</h1>
+        <div class="gride-container-events">
+            <div class="event-type">
+                <h3>Weddings</h3>
+                <h3>Coporate Events</h3>
+                <h3>Dinner Parties</h3>
+                <h3>Charity Events</h3>
+            </div>
+            <div class="event-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur a bibendum purus. 
+                    Duis convallis velit nec nisi efficitur, nec commodo nunc cursus.
+                </p>
+                <p>Curabitur a bibendum purus. 
+                    Duis convallis velit nec nisi efficitur, nec commodo nunc cursus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+            <div class="event-book">
+                <img src="../Restaurant/assets/private-event-image.jpeg" alt="image of a party">
+                <button class="booking-button">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="spacer-line">
+        
+    </section>
+
+    <!-- Contact section-->
+    <section id="contact">
+        <div class="gride-container-contact">
+            <h1>Restaurant Name</h1>
+            <div class="gride-location">
+                <p>Steffanie’s Place, 113 Irene Ave, Montclair, Cape Town, 7130</p>
+                <p>Monday ~ Thursday | 08:00 to 20:00 </p>
+                <p>Friday ~ Sunday | 08:00 to 22:00</p>
+            </div>
+            <div class="gride-email">
+                <p>info@restaurantName.com</p>
+                <p>events@restaurantName.com</p>
+                <p>+27 (12) 345 6789</p>
+            </div>
+            <div class="gride-socials">
+                <a href=""><img src="../Restaurant/assets/instagram.png" alt="instagram link"></a>
+                <a href=""><img src="../Restaurant/assets/facebook.png" alt="facebook link"></a>
+                <a href=""><img src="../Restaurant/assets/twitter.png" alt="twitter link"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <p>&copy; 2024 Restaurant Name. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>

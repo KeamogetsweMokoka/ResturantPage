@@ -1,0 +1,254 @@
+/* Mobile Devices (max-width: 767px) */
+@media screen and (max-width: 767px) {
+    /* Header Navigation */
+    #header-nav {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+        height: 20vh;
+    }
+
+    .logo {
+        font-size: 3rem; /* Smaller logo */
+    }
+
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .nav-links li {
+        font-size: 1.2rem;
+    }
+
+    .hamburger-menu {
+        display: block; 
+    }
+
+    /* Home Section */
+    .home-container {
+        position: relative;
+        width: 100%; 
+        height: 500px; 
+        overflow: hidden; 
+    .background-image-text {
+        padding: 1rem;
+    }
+}
+.background-image {
+    width: 100%; /* Make sure the image covers the full width */
+    height: 100%; /* Make the image take full height */
+    object-fit: cover; /* This will make the image cover the section without distortion */
+    object-position: center; /* This will center the image */
+}
+.background-image-text {
+    position: absolute; /* Position it on top of the image */
+    top: 50%; /* Vertically center */
+    left: 50%; /* Horizontally center */
+    transform: translate(-50%, -50%); /* Adjust to perfectly center */
+    text-align: center; /* Center text */
+    color: white; /* White text for visibility */
+    padding: 10px; /* Optional padding */
+}
+
+    .image-logo {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Our Story section */
+.grid-container-story {
+    display: grid;
+    grid-template-columns: 1fr; /* Change to a single column layout */
+    gap: 20px; /* Space between text and image */
+    align-items: center; /* Vertically align content */
+    justify-items: center; /* Center content horizontally */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the grid horizontally */
+    border-radius: 10px;
+}
+
+.grid-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: center; /* Center the text within the grid */
+}
+
+.grid-image {
+    width: 100%; /* Take up full width of the grid */
+    display: flex; /* Make the image a flex item */
+    justify-content: center; /* Center the image horizontally */
+}
+
+.grid-image img {
+    width: 80%; /* Control the size of the image */
+    max-width: 175px; /* Set a max-width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: adds rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+.images-after-gride-1, 
+.image-after-gride-2{
+    width: 100%;
+}
+#spacer-line {
+    border-top: 1px solid #000; /* Create a line using border-top */
+    margin: 20px 0; /* Add some vertical space around the line */
+}
+    /* Grid Containers */
+    .grid-container-story, 
+    .grid-container-menu,
+    .gride-container-events,
+    .gride-container-contact {
+        grid-template-columns: 1fr; /* Stack items vertically */
+        gap: 1rem;
+    }
+
+    .gride-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .image-reservation-button {
+        width: 100%; /* Make buttons full-width */
+        padding: 1rem;
+    }
+
+    /* Footer */
+    #footer {
+        padding: 5px;
+    }
+}
+
+/* Tablet Devices (min-width: 768px and max-width: 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Header Navigation */
+    #header-nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        display: flex; /* Show links */
+        gap: 1.5rem;
+    }
+
+    /* Home Section */
+    .home-container {
+        height: 400px;
+    }
+
+    /* Story Grid */
+    .grid-container-story {
+        grid-template-columns: 1fr 1fr; /* Two columns */
+        gap: 30px;
+    }
+
+    /* Menu Grid */
+    .grid-container-menu {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+
+    .gride-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .gride-container-contact {
+        grid-template-columns: 1fr 1fr 1fr; /* Three columns for contact info */
+    }
+
+    #spacer-line {
+        border-top: 1px solid #000; /* Create a line using border-top */
+        margin: 20px 0; /* Add some vertical space around the line */
+    }
+
+    /* Footer */
+    #footer {
+        padding: 15px 0;
+    }
+}
+
+/* Desktop Devices (min-width: 1025px) */
+@media screen and (min-width: 1025px) {
+    /* Header Navigation */
+    #header-nav {
+        justify-content: space-around;
+        padding: 2rem;
+    }
+
+    .logo {
+        font-size: 2rem; /* Larger logo */
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 2rem;
+        font-size: 1.5rem;
+    }
+
+    /* Home Section */
+    .home-container {
+        height: 500px;
+    }
+
+    .background-image-text {
+        padding: 3rem;
+    }
+
+    /* Story Grid */
+    .grid-container-story {
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+
+    /* Menu Grid */
+    .grid-container-menu {
+        grid-template-columns: repeat(4, 1fr); /* Four columns for menu */
+    }
+
+    .gride-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    #spacer-line {
+        border-top: 1px solid #000; /* Create a line using border-top */
+        margin: 20px 0; /* Add some vertical space around the line */
+    }
+
+    /* Footer */
+    #footer {
+        padding: 20px 0;
+    }
+}
+
+/* Large Screens (min-width: 1440px) */
+@media screen and (min-width: 1440px) {
+
+    #header-nav{
+        height: 17vh;
+    }
+
+    /* Home Section */
+    .home-container {
+        width: 80%; /* Limit width on large screens */
+    }
+
+    /* Grid Containers */
+    .grid-container-menu {
+        grid-template-columns: repeat(4, 1fr); /* Four columns */
+    }
+
+    .grid-container-story {
+        max-width: 1400px; /* Limit width */
+    }
+
+    .gride-container-contact {
+        max-width: 1400px; /* Limit width */
+    }
+}
